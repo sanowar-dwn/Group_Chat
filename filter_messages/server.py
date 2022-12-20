@@ -62,6 +62,7 @@ def receive():
         clients.append(client)
 
         print(f"Nickname of the client is {nickname}")
+        print(nicknames)
 
         broadcast(f"{nickname} joined the chat".encode('ascii'))
         # letting know the specific client that it has connected to the server

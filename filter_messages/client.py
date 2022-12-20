@@ -34,12 +34,6 @@ def write():
         # initializing test list
         test_list = ['hate', 'religion']
 
-        # printing original string
-        # print("The original string : " + test_string)
-
-        # printing original list
-        # print("The original list : " + str(test_list))
-
         message = message.split(" ")
 
         flag = 0
