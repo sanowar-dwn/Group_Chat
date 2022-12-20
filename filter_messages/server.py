@@ -1,6 +1,7 @@
 import threading
 import socket
-
+import matplotlib.pyplot as plt
+import numpy as np
 
 # localhost
 host = "127.0.0.1"
@@ -19,10 +20,18 @@ nicknames = []
 def broadcast(message):
     # implement the filtering of the messages here
     # implement the brand analytics and tracking here
+    brands_list = np.array(["bmw", "pepsi", "coke", "dell"])
+    y = np.array([3, 8, 1, 10])
+
+    decoded_message =str(message.decode('ascii'))
+    decoded_message = decoded_message.split(" ")
+
+    for i in brands_list:
+        if i in decoded_message:
+            print(i)
 
     for client in clients:
         client.send(message)
-
 
 def handle(client):
     while True:

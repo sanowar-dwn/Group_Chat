@@ -35,7 +35,6 @@ def write():
         test_list = ['hate', 'religion']
 
         message = message.split(" ")
-
         flag = 0
         for i in message:
             for j in test_list:
