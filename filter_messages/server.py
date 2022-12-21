@@ -20,8 +20,6 @@ nicknames = []
 def broadcast(message):
     # implement the filtering of the messages here
     # implement the brand analytics and tracking here
-    brands_list = np.array(["bmw", "pepsi", "coke", "dell"])
-    y = np.array([3, 8, 1, 10])
 
     decoded_message =str(message.decode('ascii'))
     decoded_message = decoded_message.split(" ")
